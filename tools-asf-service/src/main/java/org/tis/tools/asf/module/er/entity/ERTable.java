@@ -11,6 +11,7 @@ import java.util.List;
 /**
  *  ER图中的表对象，如人员表，角色表等等
  *  对应位置：diagram/contents/table
+ *  一个表对象中含有多个列组成 {@link ERTable}
  * @author zhaoch
  */
 @Data

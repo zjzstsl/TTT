@@ -11,8 +11,9 @@ import org.tis.tools.core.validation.AddValidateGroup;
 import java.util.List;
 
 /**
- * ER图的分类模块，如常见的 组织管理、权限管理等等
+ * ER图的分类模块(业务领域)，如常见的 组织管理、权限管理等等
  * 对应位置 diagram/settings/category_settings/categories/category
+ * 一个分类模块由多个表对象构成 {@link ERTable}
  * @author zhaoch
  */
 @Data

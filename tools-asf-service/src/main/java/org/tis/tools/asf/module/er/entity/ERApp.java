@@ -11,6 +11,14 @@ import org.tis.tools.core.validation.UpdateValidateGroup;
 import javax.validation.constraints.Null;
 import java.util.List;
 
+/**
+ * <pre>
+ * 对某个应用系统的ER设计
+ * 如：网点业务平台中对网点业务的ER设计，整个"网点业务"抽象为一个应用。
+ *
+ * 一个应用领域中可分为多个分类模块({@link ERCategory})
+ * </pre>
+ */
 @Data
 @TableName("er_app")
 public class ERApp {
