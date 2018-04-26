@@ -11,8 +11,8 @@
 	</page_setting>
 	<category_index>2</category_index>
 	<zoom>0.5</zoom>
-	<x>60</x>
-	<y>67</y>
+	<x>82</x>
+	<y>88</y>
 	<default_color>
 		<r>255</r>
 		<g>0</g>
@@ -229,7 +229,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2018-04-16 17:36:35</creation_date>
-			<updated_date>2018-04-26 16:09:23</updated_date>
+			<updated_date>2018-04-26 16:34:52</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
@@ -16543,43 +16543,6 @@
 				<b>255</b>
 			</color>
 			<connections>
-				<relation>
-					<id>48</id>
-					<source>13</source>
-					<target>39</target>
-						<source_xp>-1</source_xp>
-						<source_yp>-1</source_yp>
-						<target_xp>-1</target_xp>
-						<target_yp>-1</target_yp>
-						<bendpoint>
-							<relative>false</relative>
-							<x>134</x>
-							<y>1282</y>
-						</bendpoint>
-						<bendpoint>
-							<relative>false</relative>
-							<x>130</x>
-							<y>144</y>
-						</bendpoint>
-						<bendpoint>
-							<relative>false</relative>
-							<x>1818</x>
-							<y>144</y>
-						</bendpoint>
-						<color>
-							<r>0</r>
-							<g>0</g>
-							<b>0</b>
-						</color>
-					<child_cardinality>0..n</child_cardinality>
-					<parent_cardinality>1</parent_cardinality>
-					<reference_for_pk>true</reference_for_pk>
-					<name></name>
-					<on_delete_action>RESTRICT</on_delete_action>
-					<on_update_action>RESTRICT</on_update_action>
-					<referenced_column>null</referenced_column>
-					<referenced_complex_unique_key>null</referenced_complex_unique_key>
-				</relation>
 			</connections>
 			<physical_name>AC_ROLE</physical_name>
 			<logical_name>权限集(角色)</logical_name>
@@ -16688,42 +16651,8 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<id>329</id>
-					<referenced_column>120</referenced_column>
-					<relation>48</relation>
-					<description></description>
-					<unique_key_name></unique_key_name>
-					<logical_name>隶属应用GUID</logical_name>
-					<physical_name>GUID_APP</physical_name>
-					<type>varchar(n)</type>
-					<constraint></constraint>
-					<default_value></default_value>
-					<auto_increment>false</auto_increment>
-					<foreign_key>true</foreign_key>
-					<not_null>true</not_null>
-					<primary_key>false</primary_key>
-					<unique_key>false</unique_key>
-					<character_set></character_set>
-					<collation></collation>
-					<sequence>
-						<name></name>
-						<schema></schema>
-						<increment></increment>
-						<min_value></min_value>
-						<max_value></max_value>
-						<start></start>
-						<cache></cache>
-						<nocache>false</nocache>
-						<cycle>false</cycle>
-						<order>false</order>
-						<description></description>
-						<data_type></data_type>
-						<decimal_size>0</decimal_size>
-					</sequence>
-				</normal_column>
-				<normal_column>
 					<word_id>51</word_id>
-					<id>330</id>
+					<id>329</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
@@ -16756,7 +16685,7 @@
 				</normal_column>
 				<normal_column>
 					<word_id>207</word_id>
-					<id>331</id>
+					<id>330</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
