@@ -1,4 +1,4 @@
-package org.tis.tools.abf.module.common.enums;
+package org.tis.tools.abf.module.common.entity.enums;
 
 import org.tis.tools.core.entity.enums.BaseEnum;
 

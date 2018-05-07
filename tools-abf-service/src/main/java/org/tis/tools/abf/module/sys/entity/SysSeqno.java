@@ -59,7 +59,7 @@ public class SysSeqno implements Serializable {
     /**
      * 序号键值
      */
-    @TableId(value = "seqkey")
+    @TableId
     public String seqKey;
 
     /**

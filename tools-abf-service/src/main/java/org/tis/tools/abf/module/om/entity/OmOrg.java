@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.annotations.TableName;
 import java.util.Date;
 import lombok.Data;
 import com.baomidou.mybatisplus.annotations.TableId;
-import org.tis.tools.abf.module.common.enums.YON;
+import org.tis.tools.abf.module.common.entity.enums.YON;
 import org.tis.tools.abf.module.om.entity.enums.OmOrgStatus;
 import org.tis.tools.core.entity.enums.CommonEnumDeserializer;
 
@@ -117,7 +117,7 @@ public class OmOrg implements Serializable {
     /**
      * 数据主键:全局唯一标识符（GUID，Globally Unique Identifier），系统自动生成；
      */
-    @TableId(value = "guid")
+    @TableId
     public String guid;
 
     /**

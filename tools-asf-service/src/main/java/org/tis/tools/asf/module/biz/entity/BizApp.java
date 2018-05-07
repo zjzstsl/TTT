@@ -18,7 +18,7 @@ public class BizApp {
 
     @Null(groups = {AddValidateGroup.class}, message = "新增时ID由系统指定")
     @NotBlank(groups = {UpdateValidateGroup.class}, message = "修改时ID不能为空")
-    @TableId(type = IdType.ID_WORKER_STR)
+    @TableId
     private String id;
 
     @NotBlank(groups = {AddValidateGroup.class}, message = "名称不能为空")

@@ -40,7 +40,7 @@ public class EntityFieldGenerator {
         f.setDeclaration("public");
         if (field.getPrimaryKey()) {
             List<AnnotationField> af1 = new ArrayList<>();
-            af1.add(new AnnotationField("value", field.getPhysicalName().toLowerCase()));
+//            af1.add(new AnnotationField("value", field.getPhysicalName().toLowerCase()));
             AnnotationBase annotationBase = new AnnotationBase("TableId", af1,
                     "com.baomidou.mybatisplus.annotations.TableId");
             f.addAnno(annotationBase);

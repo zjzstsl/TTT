@@ -1,9 +1,15 @@
 package org.tis.tools.abf.module.sys.entity;
 
 import java.math.BigDecimal;
+
+import com.alibaba.fastjson.annotation.JSONField;
 import com.baomidou.mybatisplus.annotations.TableName;
 import lombok.Data;
 import com.baomidou.mybatisplus.annotations.TableId;
+import org.tis.tools.abf.module.sys.entity.enums.DictFromType;
+import org.tis.tools.abf.module.sys.entity.enums.DictType;
+import org.tis.tools.core.entity.enums.CommonEnumDeserializer;
+
 import java.io.Serializable;
 
 /**
@@ -89,7 +95,7 @@ public class SysDict implements Serializable {
     /**
      * 数据主键:全局唯一标识符（GUID，Globally Unique Identifier），系统自动生成；
      */
-    @TableId(value = "guid")
+    @TableId
     public String guid;
 
     /**
@@ -102,7 +108,8 @@ public class SysDict implements Serializable {
      * a 应用级（带业务含义的业务字典，应用开发时可扩展）
      * s 系统级（平台自己的业务字典）
      */
-    public String dictType;
+    @JSONField(deserializeUsing = CommonEnumDeserializer.class)
+    public DictType dictType;
 
     /**
      * 字典名称
@@ -154,7 +161,8 @@ public class SysDict implements Serializable {
     /**
      * 字典项来源类型:来源类型:0:来自字典项 1:来自单表  2:多表或视图
      */
-    public String fromType;
+    @JSONField(deserializeUsing = CommonEnumDeserializer.class)
+    public DictFromType fromType;
 
 }
 

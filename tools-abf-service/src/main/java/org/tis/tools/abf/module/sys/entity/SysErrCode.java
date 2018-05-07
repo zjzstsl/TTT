@@ -43,7 +43,7 @@ public class SysErrCode implements Serializable {
     /**
      * 数据主键:全局唯一标识符（GUID，Globally Unique Identifier）
      */
-    @TableId(value = "guid")
+    @TableId
     public String guid;
 
     /**

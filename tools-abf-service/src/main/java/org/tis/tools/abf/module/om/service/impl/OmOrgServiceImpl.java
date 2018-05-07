@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.tis.tools.abf.module.common.enums.YON;
+import org.tis.tools.abf.module.common.entity.enums.YON;
 import org.tis.tools.abf.module.om.dao.OmOrgMapper;
 import org.tis.tools.abf.module.om.entity.OmOrg;
 import org.tis.tools.abf.module.om.entity.enums.OmOrgStatus;

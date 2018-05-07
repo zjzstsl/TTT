@@ -58,7 +58,7 @@ public class SysRunConfig implements Serializable {
     /**
      * 数据主键:全局唯一标识符（GUID，Globally Unique Identifier），系统自动生成；
      */
-    @TableId(value = "guid")
+    @TableId
     public String guid;
 
     /**

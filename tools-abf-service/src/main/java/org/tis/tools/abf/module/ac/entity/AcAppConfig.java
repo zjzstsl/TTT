@@ -74,7 +74,7 @@ public class AcAppConfig implements Serializable {
     /**
      * 数据主键
      */
-    @TableId(value = "guid")
+    @TableId
     public String guid;
 
     /**
