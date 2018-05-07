@@ -34,7 +34,7 @@ public class OmOrgController extends BaseController {
      * @return
      */
     @OperateLog(
-            operateType = OperateType.ADD,  // 操作类型
+            operateType = OperateType.ADD,  // 操作类型字段
             operateDesc = "新增机构", // 操作描述
             retType = ReturnType.Object, // 返回类型，对象或数组
             id = "orgCode", // 操作对象标识
