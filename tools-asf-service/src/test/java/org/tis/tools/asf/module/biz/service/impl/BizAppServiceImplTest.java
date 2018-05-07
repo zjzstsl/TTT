@@ -23,7 +23,7 @@ public class BizAppServiceImplTest extends BaseTest {
     @Test
     public void importErApp() {
         // 2。将ER模型转换为BIZ模型
-        bizAppService.importErApp("986125666377244673");
+        bizAppService.importErApp("988311750804713474");
     }
 
     @Test
