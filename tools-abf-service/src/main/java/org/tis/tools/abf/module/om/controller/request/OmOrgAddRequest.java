@@ -22,4 +22,12 @@ public class OmOrgAddRequest extends RestRequest {
     private String orgType;
 
     private String guidParents;
+
+    private String  orgCode;
+
+    private String fromParentsOrgCode;
+
+    private String toParentsOrgCode;
+
+    private int toSortNo;
 }

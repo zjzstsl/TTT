@@ -357,6 +357,17 @@ public interface IOmOrgService extends IService<OmOrg> {
 
 	/**
 	 * <pre>
+	 * 查询所有父节点机构
+	 * </pre>
+	 *
+	 * @param orgCode
+	 *            机构代码
+	 * @return 对应的机构记录，无记录返回null
+	 */
+	List queryGuidParents();
+
+	/**
+	 * <pre>
 	 * 根据条件（WhereCondition）查询机构记录
 	 * 
 	 * 说明：
@@ -438,4 +449,9 @@ public interface IOmOrgService extends IService<OmOrg> {
 	 * 查询所有机构信息
 	 */
 	List<OmOrg> queryAllOrg();
+
+	/**
+	 * 查询父机构下子节点信息
+	 */
+	List<OmOrg> selectSubMenu(String guidParents);
 }
